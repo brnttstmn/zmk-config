@@ -9,15 +9,11 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 
-&mt {
-    tapping-term-ms = <400>;
-};
-
 / {
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+               default_layer {
             // ------------------------------------------------------------------------------------------------------------
             // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
             // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
@@ -26,10 +22,10 @@
             //                     | ALT  | DEL  | LWIN |  SPACE |  | SPACE |ENTER | BSPC  |       |
             display-name = "Base";
             bindings = <
-&kp ESC           &mt LSHIFT N1  &mt LSHIFT N2  &mt LSHIFT N3    &mt LSHIFT N4      &mt LSHIFT N5                                &mt LSHIFT N6     &mt LSHIFT N7    &mt LSHIFT N8     &mt LSHIFT N9   &mt LSHIFT N0    &mt LSHIFT PLUS
-&kp TAB           &mt LSHIFT Q   &mt LSHIFT W   &mt LSHIFT E     &mt LSHIFT R       &mt LSHIFT T                                 &mt LSHIFT Y      &mt LSHIFT U     &mt LSHIFT I      &mt LSHIFT O    &mt LSHIFT P     &mt LSHIFT MINUS
-&kp LEFT_SHIFT    &mt LSHIFT A   &mt LSHIFT S   &mt LSHIFT D     &mt LSHIFT F       &mt LSHIFT G                                 &mt LSHIFT H      &mt LSHIFT J     &mt LSHIFT K      &mt LSHIFT L    &mt LSHIFT SEMI  &mt LSHIFT SQT
-&kp LEFT_CONTROL  &mt LSHIFT Z   &mt LSHIFT X   &mt LSHIFT C     &mt LSHIFT V       &mt LSHIFT B         &tog 1       &tog 2     &mt LSHIFT N      &mt LSHIFT M     &mt LSHIFT COMMA  &mt LSHIFT DOT  &mt LSHIFT FSLH  &kp RSHFT
+&kp ESC           &kp N1  &kp N2  &kp N3    &kp N4      &kp N5                                &kp N6     &kp N7    &kp N8     &kp N9   &kp N0    &kp PLUS
+&kp TAB           &kp Q   &kp W   &kp E     &kp R       &kp T                                 &kp Y      &kp U     &kp I      &kp O    &kp P     &kp MINUS
+&kp LEFT_SHIFT    &kp A   &kp S   &kp D     &kp F       &kp G                                 &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp V       &kp B         &tog 1       &tog 2     &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
                                   &kp LALT  &kp DELETE  &kp LEFT_WIN  &kp SPACE    &kp SPACE  &kp ENTER  &kp BSPC  &trans
             >;
         };
