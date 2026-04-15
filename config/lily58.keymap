@@ -12,21 +12,20 @@
 / {
     keymap {
         compatible = "zmk,keymap";
-
                default_layer {
             // ------------------------------------------------------------------------------------------------------------
-            // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
-            // |  TAB  |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
-            // | SHIFT |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-            // | LCTRL |  Z  |  X  |  C   |  V   |  B   |  LLay  |  | ULay  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
-            //                     | ALT  | DEL  | LWIN |  SPACE |  | SPACE |ENTER | BSPC  |       |
+            // |  ESC   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |  =/+  |
+            // |  TAB   |  Q  |  W  |  E   |  R   |  T   |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
+            // | CAPS   |  A  |  S  |  D   |  F   |  G   |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
+            // | LSHIFT |  Z  |  X  |  C   |  V   |  B   |  LLay  |  | ULay  |  N   |  M    |  ,    |  .   |   /   | RSHIFT|
+            //                      | LCTRL| LALT | LWIN |  SPACE |  | ENTER | BSPC | DEL   |       |
             display-name = "Base";
             bindings = <
-&kp ESC           &kp N1  &kp N2  &kp N3    &kp N4      &kp N5                                &kp N6     &kp N7    &kp N8     &kp N9   &kp N0    &kp PLUS
-&kp TAB           &kp Q   &kp W   &kp E     &kp R       &kp T                                 &kp Y      &kp U     &kp I      &kp O    &kp P     &kp MINUS
-&kp LEFT_SHIFT    &kp A   &kp S   &kp D     &kp F       &kp G                                 &kp H      &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LEFT_CONTROL  &kp Z   &kp X   &kp C     &kp V       &kp B         &tog 1       &tog 2     &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                                  &kp LALT  &kp DELETE  &kp LEFT_WIN  &kp SPACE    &kp SPACE  &kp ENTER  &kp BSPC  &trans
+&kp ESC    &kp N1  &kp N2  &kp N3    &kp N4      &kp N5                                      &kp N6     &kp N7     &kp N8     &kp N9   &kp N0    &kp EQUAL
+&kp TAB    &kp Q   &kp W   &kp E     &kp R       &kp T                                       &kp Y      &kp U      &kp I      &kp O    &kp P     &kp MINUS
+&kp CAPS   &kp A   &kp S   &kp D     &kp F       &kp G                                       &kp H      &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHIFT &kp Z   &kp X   &kp C     &kp V       &kp B               &tog 1       &tog 2     &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                                  &kp LCTRL  &kp LALT  &kp LEFT_WIN  &kp SPACE    &kp ENTER  &kp BSPC   &kp DELETE &trans
             >;
         };
 
